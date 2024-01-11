@@ -15,8 +15,8 @@ function convert() {
         result.textContent = (`${answer} |F`);
     } else if (toCelcius.checked) {
         console.log(temp);
-        answer = temp - 20;
-        result.textContent = answer;
+        answer = (temp - 32) * (5/9);
+        result.textContent = `${answer.toFixed(1)} |C`;
     } else {
         result.textContent = "0"
     }
